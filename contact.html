@@ -4,18 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
 
   <body>
     <h1 class="title">Contact Information</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="home.html">Home</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
     <p>
-      Thanks for stopping by. I'd love to hear from you. Please contact me using
-      the form below. I'll get back to you as soon as possible.
+      Thanks for stopping by. I'd love to hear from you. Please
+      <a><a href="mailto:stevelad_83@yahoo.com">email me</a></a> here, or leave
+      your comments below. I'll get back to you as soon as possible.
     </p>
+
+    <div class="container">
+      <form method="POST" action="action_page.php">
+        <label for="forename">Forename</label>
+        <input
+          type="text"
+          id="forename"
+          name="forename"
+          placeholder="Forename here"
+          required="required"
+        />
+
+        <label for="surname">Surname</label>
+        <input
+          type="text"
+          id="surname"
+          name="lastname"
+          placeholder="Surname here"
+          required="required"
+        />
+
+        <label for="company">Company</label>
+        <input
+          type="text"
+          id="businessname"
+          name="businessname"
+          placeholder="Business name"
+          required="required"
+        />
+
+        <label for="comments">Comments</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Your comments here..."
+          style="height: 200px"
+          required="required"
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   </body>
 </html>
